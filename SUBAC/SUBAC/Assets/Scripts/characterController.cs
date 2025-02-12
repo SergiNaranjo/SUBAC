@@ -4,28 +4,36 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
-    public float cursorSpeed = 5f; // Velocidad del cursor
-    private Camera cam;
+    public float velocidad = 5f;
+    public GameObject balaPrefab; // Prefab de la bala
+    public Transform puntoDeDisparo; // Punto desde el cual se disparará la bala
+    public float fuerzaDisparo = 10f;
+    public float tiempoEntreDisparos = 0.2f; // Tiempo en segundos entre disparos
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        cam = Camera.main;
-    }
+    private float tiempoSiguienteDisparo = 0f;
 
-    // Update is called once per frame
     void Update()
     {
-        // Obtener la posición actual del mouse en pantalla
-        Vector3 targetPosition = cam.ScreenToWorldPoint(Input.mousePosition);
-        targetPosition.z = transform.position.z; // Mantener la misma posición Z del cursor
+        // Movimiento del personaje
+        float movimientoX = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;
+        float movimientoY = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;
+        transform.Translate(movimientoX, movimientoY, 0);
 
-        // Obtener la posición actual del objeto (cursor)
-        Vector3 currentPosition = transform.position;
+        // Disparo con el clic izquierdo del ratón
+        if (Input.GetButton("Fire1") && Time.time >= tiempoSiguienteDisparo)
+        {
+            tiempoSiguienteDisparo = Time.time + tiempoEntreDisparos;
+            Disparar();
+        }
+    }
 
-        // Mover el objeto (cursor) suavemente hacia la posición del mouse
-        transform.position = Vector3.Lerp(currentPosition, targetPosition, cursorSpeed * Time.deltaTime);
+    void Disparar()
+    {
+        GameObject bala = Instantiate(balaPrefab, puntoDeDisparo.position, puntoDeDisparo.rotation);
+        Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
+        rb.AddForce(puntoDeDisparo.right * fuerzaDisparo, ForceMode2D.Impulse);
     }
 }
+
 
 
