@@ -1,14 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\",
+  "WorkspaceRootPath": "C:\\Users\\naran\\Desktop\\SUBAC\\SUBAC\\SUBAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29C749C7-4B9F-B67F-A8CD-928C190AC7AF}|Assembly-CSharp.csproj|c:\\users\\naran\\desktop\\subac-subaquatic-combat\\subac\\subac\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29C749C7-4B9F-B67F-A8CD-928C190AC7AF}|Assembly-CSharp.csproj|c:\\users\\naran\\desktop\\subac\\subac\\subac\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29C749C7-4B9F-B67F-A8CD-928C190AC7AF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29C749C7-4B9F-B67F-A8CD-928C190AC7AF}|Assembly-CSharp.csproj|c:\\users\\naran\\desktop\\subac-subaquatic-combat\\subac\\subac\\assets\\scripts\\hidemouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29C749C7-4B9F-B67F-A8CD-928C190AC7AF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hidemouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\hideMouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,23 +24,22 @@
               "DocumentIndex": 1,
               "Title": "hideMouse.cs",
               "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\hideMouse.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\hideMouse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\hideMouse.cs",
               "ToolTip": "C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\hideMouse.cs",
-              "RelativeToolTip": "Assets\\Scripts\\hideMouse.cs",
+              "RelativeToolTip": "..\\..\\..\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\hideMouse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T08:55:45.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T08:55:45.257Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "characterController.cs",
-              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\characterController.cs",
+              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SUBAC\\SUBAC\\SUBAC\\Assets\\Scripts\\characterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\characterController.cs",
-              "ToolTip": "C:\\Users\\naran\\Desktop\\SUBAC-Subaquatic-Combat\\SUBAC\\SUBAC\\Assets\\Scripts\\characterController.cs",
+              "ToolTip": "C:\\Users\\naran\\Desktop\\SUBAC\\SUBAC\\SUBAC\\Assets\\Scripts\\characterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\characterController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAUAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T08:47:01.753Z",
               "EditorCaption": ""
