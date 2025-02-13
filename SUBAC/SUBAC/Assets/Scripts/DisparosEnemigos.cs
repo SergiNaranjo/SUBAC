@@ -8,6 +8,7 @@ public class DisparosEnemigos : MonoBehaviour
     public Transform puntoDeDisparo; // Punto desde el cual se disparará la bala
     public float fuerzaDisparo = 10f;
     public float tiempoEntreDisparos = 1f; // Tiempo en segundos entre disparos
+    public Transform objetivo; // Referencia al jugador
 
     private float tiempoSiguienteDisparo = 0f;
 
@@ -23,8 +24,12 @@ public class DisparosEnemigos : MonoBehaviour
 
     void Disparar()
     {
+        // Calcular la dirección hacia el objetivo en el momento del disparo
+        Vector2 direccionDisparo = (objetivo.position - puntoDeDisparo.position).normalized;
+
         GameObject bala = Instantiate(balaPrefab, puntoDeDisparo.position, puntoDeDisparo.rotation);
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
-        rb.AddForce(puntoDeDisparo.right * fuerzaDisparo, ForceMode2D.Impulse);
+        rb.velocity = direccionDisparo * fuerzaDisparo;
     }
 }
+
