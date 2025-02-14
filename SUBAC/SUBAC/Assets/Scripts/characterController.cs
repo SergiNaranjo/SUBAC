@@ -49,11 +49,12 @@ public class characterController : MonoBehaviour
 
     void Disparar()
     {
-        GameObject bala = Instantiate(balaPrefab, puntoDeDisparo.position, puntoDeDisparo.rotation);
+        GameObject bala = Instantiate(balaPrefab, puntoDeDisparo.position, Quaternion.identity); // Asegurar rotación neutral
         Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
-        rbBala.AddForce(puntoDeDisparo.right * fuerzaDisparo, ForceMode2D.Impulse);
+        rbBala.velocity = Vector2.up * fuerzaDisparo; // Disparo recto hacia arriba
     }
 }
+
 
 
 

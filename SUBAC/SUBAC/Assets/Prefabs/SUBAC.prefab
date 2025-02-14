@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadNormal: 5
   velocidadFreno: 3
-  balaPrefab: {fileID: 2312241462695798835, guid: 4b778ba3984a3864e905add727069f38, type: 3}
+  balaPrefab: {fileID: 5648347262164238936, guid: 57e13c2fdc206a3408daab319c4f8e36, type: 3}
   puntoDeDisparo: {fileID: 1589011236889657776}
   fuerzaDisparo: 15
   tiempoEntreDisparos: 0.1
