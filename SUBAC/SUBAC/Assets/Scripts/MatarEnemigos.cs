@@ -11,6 +11,7 @@ public class MatarEnemigos : MonoBehaviour
     public GameObject barrier; // Objeto que desaparecerá
     public GameObject extraObject; // Objeto adicional que se desactivará
     public Camera mainCamera; // Cámara principal
+    public GameObject objectToActivate; // Objeto que se activará manualmente
     private int requiredKills; // Cantidad de enemigos a eliminar
 
     private void Start()
@@ -68,5 +69,12 @@ public class MatarEnemigos : MonoBehaviour
 
         // Restaurar el tiempo del juego
         Time.timeScale = 1f;
+
+        // Activar el GameObject elegido manualmente
+        if (objectToActivate != null)
+        {
+            objectToActivate.SetActive(true);
+        }
     }
 }
+

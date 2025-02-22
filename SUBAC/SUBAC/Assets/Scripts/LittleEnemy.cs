@@ -5,11 +5,13 @@ using UnityEngine;
 public class LittleEnemy : MonoBehaviour
 {
     private MatarEnemigos killTracker;
+    private MatarEnemigosUltimoTutorial killTracker2;
 
     private void Start()
     {
         // Buscar automáticamente el EnemyKillTracker en la escena
         killTracker = FindObjectOfType<MatarEnemigos>();
+        killTracker2 = FindObjectOfType<MatarEnemigosUltimoTutorial>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -23,6 +25,11 @@ public class LittleEnemy : MonoBehaviour
                 killTracker.EnemyKilled(gameObject);
             }
 
+            if (killTracker2 != null)
+            {
+                killTracker2.EnemyKilled(gameObject);
+            }
+
             // Destruir este GameObject (el enemigo)
             Destroy(gameObject);
 
@@ -31,4 +38,5 @@ public class LittleEnemy : MonoBehaviour
         }
     }
 }
+
 
