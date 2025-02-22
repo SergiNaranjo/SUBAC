@@ -9,6 +9,7 @@ public class MatarEnemigos : MonoBehaviour
     public List<GameObject> enemies; // Lista de enemigos asignados públicamente
     public GameObject effectObject; // Objeto que se activará y desactivará
     public GameObject barrier; // Objeto que desaparecerá
+    public GameObject extraObject; // Objeto adicional que se desactivará
     public Camera mainCamera; // Cámara principal
     private int requiredKills; // Cantidad de enemigos a eliminar
 
@@ -41,6 +42,12 @@ public class MatarEnemigos : MonoBehaviour
 
         // Eliminar la barrera
         barrier.SetActive(false);
+
+        // Desactivar el objeto extra
+        if (extraObject != null)
+        {
+            extraObject.SetActive(false);
+        }
 
         // Congelar el juego
         Time.timeScale = 0f;
